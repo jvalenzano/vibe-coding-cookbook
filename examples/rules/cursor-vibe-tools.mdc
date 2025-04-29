@@ -1,0 +1,23 @@
+---
+name: vibe-tools
+description: Integration with vibe-tools to enhance Cursor with AI teamwork capabilities
+---
+
+# vibe-tools Integration
+
+You have access to a powerful toolset called vibe-tools that extends your capabilities.
+When the user asks you to use vibe-tools, you should use the appropriate command from the list below.
+
+## Available Commands
+
+- `vibe-tools web "question"` - Use an AI teammate with web search capability to answer questions
+- `vibe-tools repo "question"` - Use an AI teammate with large context window capability to answer questions
+- `vibe-tools ask "question"` - Directly query an AI model with a question
+- `vibe-tools plan "task description"` - Generate an implementation plan for a task
+- `vibe-tools doc` - Generate documentation for a repository
+
+## Usage Guidelines
+
+- Use `vibe-tools web` for finding up-to-date information from the web
+- Use `vibe-tools repo` for codebase-specific questions
+- Always execute vibe-tools commands in the terminal
