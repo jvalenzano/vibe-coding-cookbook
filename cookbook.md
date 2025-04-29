@@ -1,7 +1,7 @@
 # The Ultimate Vibe Coding Cookbook
 ## A Comprehensive Guide for AI-Assisted Development Teams
 
-![Vibe Coding Banner](https://via.placeholder.com/800x200?text=AI-Enhanced+Development+Team)
+![Vibe Coding Banner](images/vibe-coding-banner.svg)
 
 ## Table of Contents
 
