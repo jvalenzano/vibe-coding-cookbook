@@ -1,15 +1,11 @@
 title: Vibe Coding Cookbook
 description: A guide for AI-assisted software development teams
-theme: just-the-docs
+theme: null
+markdown: kramdown
 
-# Enable GitHub Pages features
 plugins:
   - jekyll-seo-tag
 
-# Navigation settings
-just_the_docs:
-  logo: "images/vibe-coding-cookbook.png"
-  favicon_ico: "images/favicon.ico"
-  aux_links:
-    GitHub Repo:
-      - https://github.com/jvalenzano/vibe-coding-cookbook
+# Just the Docs settings
+logo: "/images/vibe-coding-cookbook.png"
+favicon_ico: "/images/favicon.ico"
