@@ -3,11 +3,12 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,14 +24,13 @@ jobs:
           bundle config path vendor/bundle
           bundle install
 
-      - name: Build Jekyll site
+      - name: Build site
         run: bundle exec jekyll build
 
-      - name: Upload GitHub Pages artifact
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./_site
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
-
