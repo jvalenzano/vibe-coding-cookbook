@@ -3,7 +3,11 @@ title: Vibe Coding Cookbook
 layout: default
 ---
 
-<img src="images/vibe-coding-cookbook.png" alt="Vibe Coding Cookbook Logo" width="250" style="margin-top: 20px; margin-bottom: 20px;">
+<p align="center">
+  <a href="/">
+    <img src="images/vibe-coding-cookbook.png" alt="Vibe Coding Cookbook Logo" width="220" style="margin-top: 20px; margin-bottom: 20px;">
+  </a>
+</p>
 
 # 🧠 Vibe Coding Cookbook
 
