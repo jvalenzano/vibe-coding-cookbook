@@ -8,10 +8,13 @@ ehthumbs.db
 Thumbs.db
 
 # Editor directories and files
-.idea
-.vscode
-*.swp
-*.swo
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Node modules if you later add any scripts
 node_modules/
