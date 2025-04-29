@@ -1,0 +1,16 @@
+# Normalize text files (Unix-style line endings)
+* text=auto eol=lf
+
+# Treat these as binary so GitHub doesn’t try to diff them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg binary
+*.ico binary
+
+# Prevent Git from converting these images
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.svg -text
+*.ico -text
