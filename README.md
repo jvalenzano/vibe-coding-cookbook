@@ -6,6 +6,26 @@
 
 This guide provides everything you need to get started with AI-assisted development, including environment setup, project workflows, and best practices.
 
+## 📚 Table of Contents
+
+1. [Introduction to Vibe Coding](#introduction-to-vibe-coding)
+2. [Getting Started](#getting-started)
+   - [Environment Setup](#environment-setup)
+   - [Setup Scripts](#setup-scripts)
+3. [Core Frameworks](#core-frameworks)
+   - [vibe-tools](#vibe-tools)
+   - [BMAD Method](#bmad-method)
+   - [CursorRIPER Framework](#cursorriper-framework)
+4. [Project Workflow](#project-workflow)
+5. [Best Practices](#best-practices)
+   - [Effective Prompting (STAR Framework)](#effective-prompting-star-framework)
+   - [Guardrails](#guardrails)
+   - [Standard Project Structure](#standard-project-structure)
+6. [Troubleshooting](#troubleshooting)
+7. [Resources](#resources)
+8. [Folder Structure Overview](#folder-structure-overview)
+
+
 ## Table of Contents
 
 1. [Introduction to Vibe Coding](#introduction-to-vibe-coding)
@@ -17,6 +37,7 @@ This guide provides everything you need to get started with AI-assisted developm
 5. [Best Practices](#best-practices)
 6. [Troubleshooting](#troubleshooting)
 7. [Resources](#resources)
+8. [Folder Structure](#folder-structure-overview)
 
 ---
 
@@ -133,7 +154,7 @@ Follow this integrated workflow:
 
 1. **Initialize Project**
    ```bash
-   ~/Development/AI-Tools/init-project.sh my-project webapp
+   ~/Development/vibe-coding-cookbook/scripts/init-project.sh my-project webapp
    ```
 
 2. **Gather Requirements** (BMAD Business Analyst)
@@ -185,7 +206,7 @@ project-root/
 
 - **Scripts**: `~/Development/vibe-coding-cookbook/scripts/`
 - **Cookbook**: `~/Development/vibe-coding-cookbook/cookbook.md`
-- **Shared Prompts**: `~/Development/Shared/prompts/`
+- **Shared Prompts**: `~/Development/vibe-coding-cookbook/Shared/prompts/`
 - **External Links**:
   - [BMAD Method](https://github.com/bmadcode/BMAD-METHOD)
   - [CursorRIPER](https://github.com/johnpeterman72/CursorRIPER)
@@ -193,4 +214,25 @@ project-root/
 
 ---
 
+## Folder Structure Overview
+
+The `vibe-coding-cookbook` repository is organized into key functional areas:
+
+```
+vibe-coding-cookbook/
+├── AI-Tools/               # Included AI frameworks: BMAD, CursorRIPER, vibe-tools
+├── docs/                   # Getting started guides, techniques
+├── examples/               # Example rules, starter scripts
+├── images/                 # Diagrams, screenshots, and visuals
+├── scripts/                # Setup scripts for projects and environments
+├── Shared/                 # Prompt libraries, style guides, and shared resources
+├── templates/              # Unified template library
+│   ├── projects/           # Full project blueprints (Node, React, Fullstack)
+│   └── snippets/           # Reusable code prompts/snippets (Cursor, Replit, Windsurf)
+├── README.md               # Entry point and overview
+├── cookbook.md             # Main cookbook content
+└── .gitignore, LICENSE     # Standard project configs
+```
+
 *This guide is maintained by the AI Tools Team. Last updated: April 2025.*
+

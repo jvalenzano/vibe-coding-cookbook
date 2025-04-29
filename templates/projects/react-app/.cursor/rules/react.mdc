@@ -1,0 +1,11 @@
+---
+name: React Best Practices
+description: Guidelines for React development
+---
+
+When writing React code, follow these best practices:
+- Use functional components with hooks instead of class components
+- Follow the React component lifecycle correctly
+- Use proper state management techniques
+- Implement error boundaries for robust error handling
+- Create small, reusable components
