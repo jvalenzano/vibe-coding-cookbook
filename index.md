@@ -1,50 +1,19 @@
 ---
-title: Vibe Coding Cookbook
 layout: default
+title: Vibe Coding Cookbook
+nav_order: 1
 ---
 
-<p align="center">
-  <a href="/">
-    <img src="images/vibe-coding-cookbook.png" alt="Vibe Coding Cookbook Logo" width="220" style="margin-top: 20px; margin-bottom: 20px;">
-  </a>
-</p>
+# 🧠 Welcome to the Vibe Coding Cookbook
 
-# 🧠 Vibe Coding Cookbook
+This is a guide for AI-assisted software development teams, including tools like:
 
-Welcome to the **Vibe Coding Cookbook** — a practical guide for AI-assisted development teams using tools like BMAD, CursorRIPER, and vibe-tools.
+- **BMAD METHOD**
+- **CursorRIPER**
+- **Vibe-Tools Framework**
 
-...
-
-
-## 🚀 Quick Start
-
-- [Setup Environment](scripts/setup-dev-environment.sh)
-- [Initialize Cookbook](scripts/setup-vibe-cookbook.sh)
-- [Browse Templates](templates/)
-- [Prompt Library](Shared/prompts/)
+Explore templates, prompts, and automation guides using the sidebar navigation!
 
 ---
 
-## 📚 What You'll Find Here
-
-- 🔧 AI tooling integrations (BMAD, CursorRIPER, vibe-tools)
-- 🧩 Modular code snippets and full-stack project templates
-- 🗺️ End-to-end workflow playbooks
-- ✨ Prompt engineering strategies
-
----
-
-## 📂 Repository Overview
-
-Refer to the [Folder Structure Overview](README.md#folder-structure-overview) for a breakdown of how everything fits together.
-
----
-
-## 💬 Get Involved
-
-- [File an Issue](https://github.com/jvalenzano/vibe-coding-cookbook/issues)
-- [Contribute a PR](https://github.com/jvalenzano/vibe-coding-cookbook/pulls)
-- Star the project to support ongoing improvements ⭐
-
----
-
+✅ This site is powered by [Just the Docs](https://just-the-docs.github.io/just-the-docs/).
