@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
-gem "just-the-docs"
+gem "jekyll", "~> 4.3.2"
+gem "just-the-docs", "~> 0.5.0"
 gem "jekyll-include-cache"
 gem "jekyll-seo-tag"
+gem "webrick", "~> 1.8"
