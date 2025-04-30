@@ -1,39 +1,5 @@
 <button class="btn js-toggle-dark-mode">Toggle Dark Mode</button>
 
-<script>
-  // Handle dark mode toggle
-  document.addEventListener("DOMContentLoaded", function() {
-    const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-    
-    // Check for saved preference or use system preference
-    const savedTheme = localStorage.getItem('theme') ||
-                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    
-    // Apply theme on page load
-    if (savedTheme === 'dark') {
-      document.querySelector('html').setAttribute('data-theme', 'dark');
-      toggleDarkMode.textContent = 'Toggle Light Mode';
-    }
-    
-    // Toggle theme when button is clicked
-    toggleDarkMode.addEventListener('click', function() {
-      const currentTheme = document.querySelector('html').getAttribute('data-theme') || 'light';
-      
-      if (currentTheme === 'dark') {
-        document.querySelector('html').setAttribute('data-theme', 'light');
-        toggleDarkMode.textContent = 'Toggle Dark Mode';
-        localStorage.setItem('theme', 'light');
-        jtd.setTheme('light');
-      } else {
-        document.querySelector('html').setAttribute('data-theme', 'dark');
-        toggleDarkMode.textContent = 'Toggle Light Mode';
-        localStorage.setItem('theme', 'dark');
-        jtd.setTheme('dark');
-      }
-    });
-  });
-</script>
-
 <hr>
 <p class="text-small text-grey-dk-100">
   <a href="https://github.com/jvalenzano/vibe-coding-cookbook">GitHub</a> |

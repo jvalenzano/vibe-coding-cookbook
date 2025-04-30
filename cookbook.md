@@ -143,18 +143,7 @@ Our team follows an integrated workflow that combines elements from BMAD Method,
 
 ### Workflow Diagram
 
-```
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│  Requirements │────▶│  Architecture │────▶│  Task Planning│
-│  (BMAD BA/PM) │     │  (BMAD Arch)  │     │  (RIPER Plan) │
-└───────────────┘     └───────────────┘     └───────────────┘
-        │                     │                     │
-        ▼                     ▼                     ▼
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│Documentation  │◀────│Implementation │◀────│    Testing    │
-│(RIPER Review) │     │(RIPER Execute)│     │(RIPER Review) │
-└───────────────┘     └───────────────┘     └───────────────┘
-```
+![Workflow Diagram](/vibe-coding-cookbook/images/diagrams/workflow.svg)
 
 ### Key Workflow Phases
 

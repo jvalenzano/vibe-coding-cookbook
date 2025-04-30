@@ -70,7 +70,7 @@ The Vibe Coding Cookbook combines three powerful tools:
 
 ## How It Works
 
-![Workflow Diagram](/vibe-coding-cookbook/images/diagrams/workflow.svg)
+![Workflow Diagram]({{ site.baseurl }}/images/diagrams/workflow.svg)
 
 ## Quick Start
 

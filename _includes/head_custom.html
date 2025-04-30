@@ -1,0 +1,29 @@
+<!-- Custom dark mode and diagram support -->
+
+<!-- Dark mode SVG styles -->
+<style>
+  [data-theme="dark"] .box-default {
+    fill: #21262d;
+    stroke: #30363d;
+  }
+  [data-theme="dark"] .box-bmad {
+    stroke: #7B61C0;
+    fill: #372E4F;
+  }
+  [data-theme="dark"] .box-cursor {
+    stroke: #26A69A;
+    fill: #1D3B39;
+  }
+  [data-theme="dark"] .arrow {
+    stroke: #aaa;
+  }
+  [data-theme="dark"] text {
+    fill: #c9d1d9;
+  }
+</style>
+
+<!-- Mermaid support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.6/dist/mermaid.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="{{ site.baseurl }}/assets/js/custom-dark-mode.js"></script>

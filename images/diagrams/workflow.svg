@@ -7,6 +7,15 @@
     .arrow { stroke: #666; stroke-width: 2px; fill: none; }
     text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }
     .title { font-weight: bold; font-size: 16px; }
+    
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      .box-default { fill: #21262d; stroke: #30363d; }
+      .box-bmad { stroke: #7B61C0; fill: #372E4F; }
+      .box-cursor { stroke: #26A69A; fill: #1D3B39; }
+      .arrow { stroke: #aaa; }
+      text { fill: #c9d1d9; }
+    }
   </style>
   
   <!-- Boxes -->
@@ -15,16 +24,14 @@
   <rect x="350" y="160" width="100" height="50" rx="5" class="box box-bmad" />
   <rect x="350" y="230" width="100" height="50" rx="5" class="box box-cursor" />
   <rect x="350" y="300" width="100" height="50" rx="5" class="box box-cursor" />
-  <rect x="350" y="370" width="100" height="50" rx="5" class="box box-cursor" />
-  <rect x="350" y="440" width="100" height="50" rx="5" class="box box-default" />
+  <rect x="350" y="370" width="100" height="50" rx="5" class="box box-default" />
   
   <!-- Arrows -->
-  <path d="M400 70 L400 90" class="arrow" marker-end="url(#arrowhead)" />
-  <path d="M400 140 L400 160" class="arrow" marker-end="url(#arrowhead)" />
-  <path d="M400 210 L400 230" class="arrow" marker-end="url(#arrowhead)" />
-  <path d="M400 280 L400 300" class="arrow" marker-end="url(#arrowhead)" />
-  <path d="M400 350 L400 370" class="arrow" marker-end="url(#arrowhead)" />
-  <path d="M400 420 L400 440" class="arrow" marker-end="url(#arrowhead)" />
+  <path d="M400 70 L400 90" class="arrow" />
+  <path d="M400 140 L400 160" class="arrow" />
+  <path d="M400 210 L400 230" class="arrow" />
+  <path d="M400 280 L400 300" class="arrow" />
+  <path d="M400 350 L400 370" class="arrow" />
   
   <!-- Text -->
   <text x="400" y="45" text-anchor="middle" class="title">Project Idea</text>
@@ -36,14 +43,5 @@
   <text x="400" y="270" text-anchor="middle">Implementation Strategy</text>
   <text x="400" y="325" text-anchor="middle" class="title">CursorRIPER Execute</text>
   <text x="400" y="340" text-anchor="middle">Generate Code</text>
-  <text x="400" y="395" text-anchor="middle" class="title">CursorRIPER Review</text>
-  <text x="400" y="410" text-anchor="middle">Test & Optimize</text>
-  <text x="400" y="465" text-anchor="middle" class="title">Project Delivery</text>
-  
-  <!-- Arrowhead marker -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
-    </marker>
-  </defs>
+  <text x="400" y="395" text-anchor="middle" class="title">Project Delivery</text>
 </svg>
