@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Getting Started
+title: Getting Started Guide
 nav_order: 4
 has_children: true
 permalink: /docs/getting-started
 ---
 
-# Getting Started with Vibe Coding
+# Getting Started Guide
 
 This guide will help you set up your environment and start using AI-assisted development tools.
 

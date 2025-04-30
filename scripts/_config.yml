@@ -1,3 +1,22 @@
+title: Vibe Coding Cookbook
+description: A guide for AI-assisted software development teams
+theme: just-the-docs
+
+# URL settings
+url: "https://jvalenzano.github.io"
+baseurl: "/vibe-coding-cookbook"
+
+# Enable search
+search_enabled: true
+search:
+  # Split pages into sections that can be searched individually
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s\-/]+/
+  rel_url: true
+  button: false
 
 # Enable Mermaid diagrams
 mermaid:
@@ -6,3 +25,63 @@ mermaid:
   # Set to true to initialize mermaid on every page load
   initialize: true
 
+# Navigation structure
+nav_external_links:
+  - title: View on GitHub
+    url: https://github.com/jvalenzano/vibe-coding-cookbook
+    hide_icon: false
+    opens_in_new_tab: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "View on GitHub":
+    - "https://github.com/jvalenzano/vibe-coding-cookbook"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
+
+# Sort order for navigation links
+nav_sort: case_insensitive # options: case_sensitive, case_insensitive
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer content
+footer_content: "Copyright &copy; 2025 Vibe Coding. Distributed by an <a href=\"https://github.com/jvalenzano/vibe-coding-cookbook/blob/main/LICENSE\">MIT license.</a>"
+
+# Optional: Logo and favicon
+logo: "/images/vibe-coding-cookbook.png"
+favicon_ico: "/images/favicon.ico"
+
+# Optional: Enable callouts
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+  highlight:
+    title: Highlight
+    color: purple
+  important:
+    title: Important
+    color: red
+
+# Collections for organizing content
+collections:
+  tools:
+    permalink: "/:collection/:path/"
+    output: true
+  examples:
+    permalink: "/:collection/:path/"
+    output: true
+
+# Default front matter for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

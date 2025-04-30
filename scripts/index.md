@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Vibe Coding Cookbook
+title: Home
 nav_order: 1
 permalink: /
+---
 ---
 
 # Vibe Coding Cookbook

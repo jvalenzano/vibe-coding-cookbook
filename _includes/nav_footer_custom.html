@@ -1,0 +1,21 @@
+<button class="btn js-toggle-dark-mode">Toggle Dark Mode</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Toggle Dark Mode';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Toggle Light Mode';
+  }
+});
+</script>
+
+<hr>
+<p class="text-small text-grey-dk-100">
+  <a href="https://github.com/jvalenzano/vibe-coding-cookbook">GitHub</a> |
+  <a href="https://github.com/jvalenzano/vibe-coding-cookbook/issues">Report an Issue</a>
+</p>
