@@ -86,6 +86,5 @@ defaults:
     values:
       layout: "default"
 
-# Add this to your _config.yml or ensure it's in the plugins section
 plugins:
   - jekyll-include-cache

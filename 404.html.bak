@@ -9,4 +9,4 @@ nav_exclude: true
 
 <p>The page you requested could not be found. Try using the navigation or search to find what you're looking for.</p>
 
-<p><a href="/">Return to Home</a></p>
+<p><a href="{{ site.baseurl }}/">Return to Home</a></p>
