@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Home
+title: "Vibe Coding Cookbook"
 nav_order: 1
 permalink: /
----
 ---
 
 # Vibe Coding Cookbook
@@ -119,19 +118,11 @@ Get started with Vibe Coding in three easy steps:
 - **Consistent Quality** - Standardized approaches reduce errors and technical debt
 - **Better Documentation** - Automatically generate comprehensive documentation
 
-## Success Stories
-
-> "We implemented the Vibe Coding approach and delivered a six-month project in just ten weeks, with higher quality than our previous manual efforts."
->
-> — **Sarah Chen, CTO at TechVentures**
-
----
-
 ## Next Steps
 
-- [Explore the Documentation](./docs/getting-started)
-- [View Example Projects](./examples)
-- [Set Up Your Environment](./docs/getting-started/environment-setup)
+- [Environment Setup](./docs/getting-started/environment-setup)
+- [Your First AI-Assisted Project](./docs/getting-started/first-project)
+- [Understanding Vibe Coding Workflow](./docs/getting-started/workflow)
 
 ---
 

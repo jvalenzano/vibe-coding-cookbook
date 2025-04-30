@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Environment Setup
-parent: Getting Started
-nav_order: 1
+parent: Getting Started Guide
+nav_order: 2
+permalink: /docs/getting-started/environment-setup
 ---
 
 # Environment Setup
@@ -31,21 +32,21 @@ cd vibe-coding-cookbook
 ./scripts/setup-dev-environment.sh
 ```
 
+This script will:
+- Create directory structure for AI tools, projects, and templates
+- Clone BMAD Method, CursorRIPER, and vibe-tools repositories
+- Configure vibe-tools globally
+- Initialize sample projects
+
 ### Step 3: Verify Installation
+
+After installation, verify that everything is set up correctly:
 
 ```bash
 vibe-tools --version
 ```
 
 You should see the version number displayed if the installation was successful.
-
-## Troubleshooting
-
-If you encounter any issues during setup:
-
-1. Make sure you have the latest version of Git and Node.js
-2. Check the logs in `~/.vibe-tools/logs`
-3. Try running the setup script with verbose logging: `./scripts/setup-dev-environment.sh --verbose`
 
 ## IDE Integration
 
@@ -54,6 +55,38 @@ The Vibe Coding tools work with any text editor or IDE, but we recommend:
 - **VS Code** with the "AI Companion" extension
 - **JetBrains IDEs** with the "AI Assistant" plugin
 - **Cursor Editor** for native AI integration
+
+## Configuration
+
+You can customize your setup by editing the configuration files:
+
+### vibe-tools Configuration
+
+Create a `vibe-tools.config.json` file in your project root:
+
+```json
+{
+  "defaultModel": "claude-3-opus-20240229",
+  "apiKey": "<your-api-key>",
+  "outputFormat": "markdown"
+}
+```
+
+### BMAD Method Configuration
+
+The BMAD Method custom prompts are located in `AI-Tools/BMAD-METHOD/custom-mode-prompts/`.
+
+### CursorRIPER Configuration
+
+CursorRIPER configuration is located in `AI-Tools/CursorRIPER/src/templates/`.
+
+## Troubleshooting
+
+If you encounter any issues during setup:
+
+1. Make sure you have the latest version of Git and Node.js
+2. Check the logs in `~/.vibe-tools/logs`
+3. Try running the setup script with verbose logging: `./scripts/setup-dev-environment.sh --verbose`
 
 ## Next Steps
 

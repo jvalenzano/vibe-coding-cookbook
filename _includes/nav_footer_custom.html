@@ -1,15 +1,32 @@
 <button class="btn js-toggle-dark-mode">Toggle Dark Mode</button>
 
 <script>
+// Store the user's preference in localStorage
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
+// Check for saved theme preference or respect OS preference
+const savedTheme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+// Apply the saved theme on page load
+document.addEventListener('DOMContentLoaded', () => {
+  if (savedTheme === 'dark') {
+    jtd.setTheme('
+    dark');
+    toggleDarkMode.textContent = 'Toggle Light Mode';
+  }
+});
+
+// Toggle theme when button is clicked
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
     toggleDarkMode.textContent = 'Toggle Dark Mode';
+    localStorage.setItem('theme', 'light');
   } else {
     jtd.setTheme('dark');
     toggleDarkMode.textContent = 'Toggle Light Mode';
+    localStorage.setItem('theme', 'dark');
   }
 });
 </script>
