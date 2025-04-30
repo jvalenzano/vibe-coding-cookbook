@@ -3,4 +3,4 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.2.0"
 gem "just-the-docs"
 gem "jekyll-include-cache"
-
+gem "jekyll-seo-tag"

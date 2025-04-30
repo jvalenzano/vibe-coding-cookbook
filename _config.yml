@@ -1,6 +1,8 @@
 title: Vibe Coding Cookbook
 description: A guide for AI-assisted software development teams
 theme: just-the-docs
+baseurl: "/vibe-coding-cookbook"
+url: "https://jvalenzano.github.io"
 
 plugins:
   - jekyll-include-cache
