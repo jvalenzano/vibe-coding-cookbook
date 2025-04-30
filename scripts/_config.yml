@@ -1,0 +1,8 @@
+
+# Enable Mermaid diagrams
+mermaid:
+  # Version of mermaid library
+  version: "9.1.6"
+  # Set to true to initialize mermaid on every page load
+  initialize: true
+
