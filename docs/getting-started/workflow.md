@@ -12,23 +12,7 @@ The Vibe Coding Workflow combines the best elements of the BMAD Method and Curso
 
 ## Workflow Overview
 
-<div class="mermaid">
-graph TD
-    A[Project Idea] --> B[BMAD Business Analyst: <br> Gather Requirements]
-    B --> C[BMAD Architect: <br> Design System]
-    C --> D[CursorRIPER Plan: <br> Implementation Strategy]
-    D --> E[CursorRIPER Execute: <br> Generate Code]
-    E --> F[CursorRIPER Review: <br> Test & Optimize]
-    F --> G[Project Delivery]
-    
-    style A fill:#f9f9f9,stroke:#ccc
-    style B fill:#e8eaf6,stroke:#5E35B1
-    style C fill:#e8eaf6,stroke:#5E35B1
-    style D fill:#e0f2f1,stroke:#00897B
-    style E fill:#e0f2f1,stroke:#00897B
-    style F fill:#e0f2f1,stroke:#00897B
-    style G fill:#f9f9f9,stroke:#ccc
-</div>
+![Workflow Diagram](/vibe-coding-cookbook/images/diagrams/workflow.svg)
 
 ## Phases Explained
 

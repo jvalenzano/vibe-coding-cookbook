@@ -12,7 +12,7 @@ This guide will walk you through creating your first project using Vibe Coding p
 
 ## Prerequisites
 
-Before starting, make sure you've completed the [Environment Setup](/docs/getting-started/environment-setup) guide.
+Before starting, make sure you've completed the [Environment Setup](../environment-setup) guide.
 
 ## Project Initialization
 
