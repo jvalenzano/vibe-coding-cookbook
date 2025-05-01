@@ -1,47 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520" viewBox="0 0 600 520">
   <style>
-    .box { fill: #fff; stroke-width: 2px; }
-    .box-bmad { stroke: #5E35B1; fill: #e8eaf6; }
-    .box-cursor { stroke: #00897B; fill: #e0f2f1; }
-    .box-default { stroke: #ccc; fill: #f9f9f9; }
-    .arrow { stroke: #666; stroke-width: 2px; fill: none; }
-    text { font-family: Arial, sans-serif; font-size: 14px; fill: #333; }
-    .title { font-weight: bold; font-size: 16px; }
-    
-    /* Dark mode styles */
+    :root {
+      --box-bg: #ffffff;
+      --box-stroke: #dddddd;
+      --box-bmad-bg: #e8eaf6;
+      --box-bmad-stroke: #5E35B1;
+      --box-cursor-bg: #e0f2f1;
+      --box-cursor-stroke: #00897B;
+      --text-color: #333333;
+      --arrow-color: #666666;
+      --highlight-color: rgba(255, 0, 0, 0.1);
+    }
+
     @media (prefers-color-scheme: dark) {
-      .box-default { fill: #21262d; stroke: #30363d; }
-      .box-bmad { stroke: #7B61C0; fill: #372E4F; }
-      .box-cursor { stroke: #26A69A; fill: #1D3B39; }
-      .arrow { stroke: #aaa; }
-      text { fill: #c9d1d9; }
+      :root {
+        --box-bg: #21262d;
+        --box-stroke: #30363d;
+        --box-bmad-bg: #372E4F;
+        --box-bmad-stroke: #7B61C0;
+        --box-cursor-bg: #1D3B39;
+        --box-cursor-stroke: #26A69A;
+        --text-color: #c9d1d9;
+        --arrow-color: #aaaaaa;
+        --highlight-color: rgba(255, 0, 0, 0.2);
+      }
+    }
+
+    .workflow-container {
+      stroke-width: 2px;
+      filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+    }
+
+    .box {
+      fill: var(--box-bg);
+      stroke: var(--box-stroke);
+      stroke-width: 2px;
+      rx: 6;
+      ry: 6;
+    }
+
+    .box-bmad {
+      fill: var(--box-bmad-bg);
+      stroke: var(--box-bmad-stroke);
+    }
+
+    .box-cursor {
+      fill: var(--box-cursor-bg);
+      stroke: var(--box-cursor-stroke);
+    }
+
+    .arrow {
+      stroke: var(--arrow-color);
+      stroke-width: 2px;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+
+    text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      fill: var(--text-color);
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .desc {
+      font-size: 11px;
+    }
+
+    .highlight-container {
+      fill: var(--highlight-color);
+      stroke: #FF6B6B;
+      stroke-width: 1px;
+      rx: 10;
+      ry: 10;
+      opacity: 0.7;
     }
   </style>
-  
-  <!-- Boxes -->
-  <rect x="350" y="20" width="100" height="50" rx="5" class="box box-default" />
-  <rect x="350" y="90" width="100" height="50" rx="5" class="box box-bmad" />
-  <rect x="350" y="160" width="100" height="50" rx="5" class="box box-bmad" />
-  <rect x="350" y="230" width="100" height="50" rx="5" class="box box-cursor" />
-  <rect x="350" y="300" width="100" height="50" rx="5" class="box box-cursor" />
-  <rect x="350" y="370" width="100" height="50" rx="5" class="box box-default" />
-  
-  <!-- Arrows -->
-  <path d="M400 70 L400 90" class="arrow" />
-  <path d="M400 140 L400 160" class="arrow" />
-  <path d="M400 210 L400 230" class="arrow" />
-  <path d="M400 280 L400 300" class="arrow" />
-  <path d="M400 350 L400 370" class="arrow" />
-  
-  <!-- Text -->
-  <text x="400" y="45" text-anchor="middle" class="title">Project Idea</text>
-  <text x="400" y="115" text-anchor="middle" class="title">BMAD Business Analyst</text>
-  <text x="400" y="130" text-anchor="middle">Gather Requirements</text>
-  <text x="400" y="185" text-anchor="middle" class="title">BMAD Architect</text>
-  <text x="400" y="200" text-anchor="middle">Design System</text>
-  <text x="400" y="255" text-anchor="middle" class="title">CursorRIPER Plan</text>
-  <text x="400" y="270" text-anchor="middle">Implementation Strategy</text>
-  <text x="400" y="325" text-anchor="middle" class="title">CursorRIPER Execute</text>
-  <text x="400" y="340" text-anchor="middle">Generate Code</text>
-  <text x="400" y="395" text-anchor="middle" class="title">Project Delivery</text>
+
+  <!-- Highlight -->
+  <rect x="90" y="20" width="420" height="470" class="highlight-container" />
+
+  <!-- Workflow boxes -->
+  <g class="workflow-container">
+    <rect x="210" y="50" width="180" height="50" class="box" />
+    <rect x="210" y="120" width="180" height="50" class="box box-bmad" />
+    <rect x="210" y="190" width="180" height="50" class="box box-bmad" />
+    <rect x="210" y="260" width="180" height="50" class="box box-cursor" />
+    <rect x="210" y="330" width="180" height="50" class="box box-cursor" />
+    <rect x="210" y="400" width="180" height="50" class="box" />
+  </g>
+
+  <!-- Connecting arrows -->
+  <g>
+    <path d="M300 100 L300 120" class="arrow" />
+    <path d="M300 170 L300 190" class="arrow" />
+    <path d="M300 240 L300 260" class="arrow" />
+    <path d="M300 310 L300 330" class="arrow" />
+    <path d="M300 380 L300 400" class="arrow" />
+  </g>
+
+  <!-- Text content -->
+  <g>
+    <text x="300" y="75" class="title">Project Idea</text>
+
+    <text x="300" y="135" class="title">BMAD Business Analyst</text>
+    <text x="300" y="150" class="desc">Gather Requirements</text>
+
+    <text x="300" y="205" class="title">BMAD Architect</text>
+    <text x="300" y="220" class="desc">Design System</text>
+
+    <text x="300" y="275" class="title">CursorRIPER Plan</text>
+    <text x="300" y="290" class="desc">Implementation Strategy</text>
+
+    <text x="300" y="345" class="title">CursorRIPER Execute</text>
+    <text x="300" y="360" class="desc">Generate Code</text>
+
+    <text x="300" y="425" class="title">Project Delivery</text>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="var(--arrow-color)" />
+    </marker>
+  </defs>
 </svg>
