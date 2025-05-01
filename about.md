@@ -2,7 +2,7 @@
 layout: default
 title: About
 nav_order: 2
-permalink: /
+permalink: /about
 ---
 
 # The Ultimate Vibe Coding Guide ![Last Updated](https://img.shields.io/badge/last%20updated-April%202025-brightgreen)
