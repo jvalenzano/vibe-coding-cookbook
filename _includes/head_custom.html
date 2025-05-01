@@ -2,6 +2,32 @@
 
 <!-- Dark mode SVG styles -->
 <style>
+  /* Dark mode toggle button styling */
+  #dark-mode-toggle {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  #dark-mode-toggle:hover {
+    background-color: var(--body-heading-color);
+    color: var(--body-background-color);
+  }
+  
+  #dark-mode-toggle:active {
+    transform: translateY(1px);
+  }
+  
+  [data-theme="dark"] #dark-mode-toggle {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+  }
+  
+  [data-theme="light"] #dark-mode-toggle {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
   [data-theme="dark"] .box-default {
     fill: #21262d;
     stroke: #30363d;

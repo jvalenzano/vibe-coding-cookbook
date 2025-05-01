@@ -14,10 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const themeToApply = savedTheme || (systemPrefersDark ? 'dark' : 'light');
     
     setTheme(themeToApply);
-    
-    // Update button text if it exists
+  }
+  
+  // Function to update button text
+  function updateButtonText(theme) {
     if (toggleDarkMode) {
-      toggleDarkMode.textContent = themeToApply === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+      const textSpan = toggleDarkMode.querySelector('.toggle-text');
+      if (textSpan) {
+        textSpan.textContent = theme === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+      } else {
+        toggleDarkMode.textContent = theme === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+      }
     }
   }
   
@@ -44,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
         jtd.setTheme('light');
       }
     }
+    
+    // Update button text
+    updateButtonText(theme);
     
     // Update SVG elements with data-theme
     updateSvgTheme(theme);
@@ -76,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       
       setTheme(newTheme);
-      
-      // Update button text
-      this.textContent = newTheme === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
     });
   } else {
     console.log("Toggle button not found on this page");
@@ -90,11 +97,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const userSetTheme = localStorage.getItem('theme');
     if (!userSetTheme) {
       setTheme(e.matches ? 'dark' : 'light');
-      
-      // Update button text if it exists
-      if (toggleDarkMode) {
-        toggleDarkMode.textContent = e.matches ? 'Toggle Light Mode' : 'Toggle Dark Mode';
-      }
     }
   });
 });
