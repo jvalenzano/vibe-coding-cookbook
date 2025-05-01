@@ -2,7 +2,9 @@
 layout: default
 title: About
 nav_order: 2
+permalink: /
 ---
+
 # The Ultimate Vibe Coding Guide ![Last Updated](https://img.shields.io/badge/last%20updated-April%202025-brightgreen)
 
 ![Vibe Coding Banner](images/vibe-coding-banner.svg)
@@ -10,39 +12,6 @@ nav_order: 2
 ## A Comprehensive Guide for AI-Assisted Development Teams
 
 This guide provides everything you need to get started with AI-assisted development, including environment setup, project workflows, and best practices.
-
-## 📚 Table of Contents
-
-1. [Introduction to Vibe Coding](#introduction-to-vibe-coding)
-2. [Getting Started](#getting-started)
-   - [Environment Setup](#environment-setup)
-   - [Setup Scripts](#setup-scripts)
-3. [Core Frameworks](#core-frameworks)
-   - [vibe-tools](#vibe-tools)
-   - [BMAD Method](#bmad-method)
-   - [CursorRIPER Framework](#cursorriper-framework)
-4. [Project Workflow](#project-workflow)
-5. [Best Practices](#best-practices)
-   - [Effective Prompting (STAR Framework)](#effective-prompting-star-framework)
-   - [Guardrails](#guardrails)
-   - [Standard Project Structure](#standard-project-structure)
-6. [Troubleshooting](#troubleshooting)
-7. [Resources](#resources)
-8. [Folder Structure Overview](#folder-structure-overview)
-
-
-## Table of Contents
-
-1. [Introduction to Vibe Coding](#introduction-to-vibe-coding)
-2. [Getting Started](#getting-started)
-   - [Environment Setup](#environment-setup)
-   - [Setup Scripts](#setup-scripts)
-3. [Core Frameworks](#core-frameworks)
-4. [Project Workflow](#project-workflow)
-5. [Best Practices](#best-practices)
-6. [Troubleshooting](#troubleshooting)
-7. [Resources](#resources)
-8. [Folder Structure](#folder-structure-overview)
 
 ---
 
@@ -239,5 +208,5 @@ vibe-coding-cookbook/
 └── .gitignore, LICENSE     # Standard project configs
 ```
 
-*This guide is maintained by the AI Tools Team. Last updated: April 2025.*
+*This guide is maintained by the AI Tools Team. Last updated: May 2025.*
 

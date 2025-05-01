@@ -111,4 +111,4 @@ Get started with Vibe Coding in three easy steps:
 ---
 
 {: .note }
-This guide is maintained by the AI Tools Team. Last updated: April 2025.
+This guide is maintained by the AI Tools Team. Last updated: May 2025.
