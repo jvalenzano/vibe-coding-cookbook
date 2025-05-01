@@ -12,9 +12,9 @@ Explore real-world examples of Vibe Coding in action, including templates, sampl
 
 ## Available Examples
 
-- [Project Templates](./project-templates) - Ready-to-use templates for various project types
-- [Sample Scripts](./sample-scripts) - Utility scripts to automate common tasks
-- [Case Studies](./case-studies) - Real-world applications of Vibe Coding
+- [Templates](./docs/examples/project-templates) - Ready-to-use templates for various project types
+- [Scripts](./docs/resources/scripts) - Utility scripts to automate common tasks
+- [Prompts](./docs/resources/prompt-library) - Real-world applications of Vibe Coding
 
 ## How to Use Examples
 

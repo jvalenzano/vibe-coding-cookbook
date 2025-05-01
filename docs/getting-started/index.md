@@ -60,8 +60,3 @@ chmod +x setup-vibe-cookbook.sh
 - Set up examples, templates, and image directories
 - Add GitHub-ready configuration
 
-## Next Steps
-
-- [Environment Setup](./environment-setup)
-- [Your First AI-Assisted Project](./first-project)
-- [Understanding Vibe Coding Workflow](./workflow)

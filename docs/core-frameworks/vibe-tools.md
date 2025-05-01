@@ -4,6 +4,11 @@ title: Vibe-Tools Framework
 parent: Core Frameworks
 nav_order: 3
 ---
+<div align="center">
+  <img height="72" src="https://github.com/user-attachments/assets/45eff178-242f-4d84-863e-247b080cc6f5" />
+</div>
+
+<div align=center><h1>Give Cursor Agent an AI team and advanced skills</h1></div>
 
 # Vibe-Tools Framework
 
@@ -51,3 +56,7 @@ Vibe-tools works seamlessly with both the BMAD Method and CursorRIPER:
 ## Resources
 
 For more information about vibe-tools, check out the [official repository](https://github.com/eastlondoner/cursor-tools).
+
+## Node Package Manager (npm)
+
+vibe-tools is available on npm [here](https://www.npmjs.com/package/vibe-tools)
