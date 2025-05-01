@@ -1,22 +1,17 @@
-// Dark mode toggle and Mermaid integration
+// Dark mode toggle and theme persistence
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM Content Loaded - Dark Mode Script Running");
+  console.log("Dark mode script loaded");
   
   // Check if we're on a page that has the dark mode toggle
   const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-  console.log("Toggle button found:", toggleDarkMode !== null);
   
   // Function to apply the theme based on localStorage or system preference
   function applyTheme() {
     const savedTheme = localStorage.getItem('theme');
-    console.log("Saved theme from localStorage:", savedTheme);
-    
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    console.log("System prefers dark:", systemPrefersDark);
     
     // If theme is saved in localStorage, use that, otherwise use system preference
     const themeToApply = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-    console.log("Theme to apply:", themeToApply);
     
     setTheme(themeToApply);
     
@@ -39,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // If jtd object exists (Just the Docs theme), use its setTheme function
       if (typeof jtd !== 'undefined' && jtd.setTheme) {
-        console.log("Using jtd.setTheme for dark mode");
         jtd.setTheme('dark');
       }
     } else {
@@ -47,10 +41,25 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // If jtd object exists (Just the Docs theme), use its setTheme function
       if (typeof jtd !== 'undefined' && jtd.setTheme) {
-        console.log("Using jtd.setTheme for light mode");
         jtd.setTheme('light');
       }
     }
+    
+    // Update SVG elements with data-theme
+    updateSvgTheme(theme);
+  }
+  
+  // Function to update SVG elements with the current theme
+  function updateSvgTheme(theme) {
+    // Force SVG elements to respect the current theme
+    const svgElements = document.querySelectorAll('svg');
+    svgElements.forEach(svg => {
+      if (theme === 'dark') {
+        svg.setAttribute('data-theme', 'dark');
+      } else {
+        svg.removeAttribute('data-theme');
+      }
+    });
   }
   
   // Apply theme on page load
@@ -58,14 +67,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // If toggle button exists, add event listener
   if (toggleDarkMode) {
-    console.log("Adding click event listener to toggle button");
-    toggleDarkMode.addEventListener('click', function() {
+    console.log("Adding click listener to toggle button");
+    toggleDarkMode.addEventListener('click', function(e) {
       console.log("Toggle button clicked");
-      const currentTheme = localStorage.getItem('theme') || 'light';
-      console.log("Current theme before toggle:", currentTheme);
+      e.preventDefault(); // Prevent any default behavior
       
+      const currentTheme = localStorage.getItem('theme') || 'light';
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      console.log("New theme after toggle:", newTheme);
       
       setTheme(newTheme);
       
@@ -73,13 +81,12 @@ document.addEventListener("DOMContentLoaded", function() {
       this.textContent = newTheme === 'dark' ? 'Toggle Light Mode' : 'Toggle Dark Mode';
     });
   } else {
-    console.log("No toggle button found - skipping event listener");
+    console.log("Toggle button not found on this page");
   }
   
   // Also respond to system preference changes if user hasn't manually selected a theme
   const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
   prefersDarkScheme.addEventListener('change', function(e) {
-    console.log("System theme preference changed");
     const userSetTheme = localStorage.getItem('theme');
     if (!userSetTheme) {
       setTheme(e.matches ? 'dark' : 'light');
