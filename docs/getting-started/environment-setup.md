@@ -10,6 +10,33 @@ permalink: /docs/getting-started/environment-setup
 
 This guide covers setting up your development environment for Vibe Coding.
 
+### Prerequisites
+
+- An AI assistant capable of using these prompts (Claude, GPT-4, Gemini, etc.)
+- Optional burt HIGHLY Recommended: Access to [Deep Research AI](https://bytebridge.medium.com/comparing-leading-ai-deep-research-tools-chatgpt-google-perplexity-kompas-ai-and-elicit-59678c511f18)
+- Basic understanding of Cursor / Windsurf / Replit / Cline / Roo / CoPilot Agent
+- A software product or project idea you want to build with AI
+
+### How to Use with your UI or IDE of choice
+
+#### Gemini (Google)
+
+- Configure a Custom Gem for each mode you want to use. For example, I recommend before even going into your IDE set up the ba, pm and ux Gems at a minimum, also potentially the architect. Especially if you intend to use deep research (which you might as well with it be so great) - you will want to make use of the custom modes in Gemini.
+
+#### Cursor
+
+- Ensure you have Custom Modes (Beta) turned on in your cursor options
+- Create the Custom Modes for each of your intended agents, going into the advanced options to give them custom prompts (copied and modified as needed from the ./custom-mode-prompts folder)
+
+#### RooCode
+
+- Follow this [guide](https://publish.obsidian.md/aixplore/AI+Systems+%26+Architecture/custom-modes-quick-start) along with the prompts (copied and modified as needed from the ./custom-mode-prompts folder)
+
+#### Other IDEs
+
+Other IDEs do not yet seem to have the exact same way of creating custom modes - but you can still use this methodology through rules, plan/act modes, and using the mode prompts as a prompt to start a new chat session.
+
+
 ## System Requirements
 
 - **Operating System**: Windows 10+, macOS 10.15+, or Linux
